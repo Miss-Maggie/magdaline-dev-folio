@@ -7,6 +7,7 @@ import {
   HeadphonesIcon, 
   FileText, 
   Wrench,
+  Code,
   ArrowRight
 } from "lucide-react"
 
@@ -18,6 +19,13 @@ export function Services() {
       description: "Modern, responsive websites that deliver exceptional user experiences across all devices.",
       features: ["Responsive Design", "UI/UX Focus", "Performance Optimization"],
       color: "from-blue-500 to-blue-600"
+    },
+    {
+      icon: Code,
+      title: "Website Development",
+      description: "Building robust, scalable web applications with modern technologies and best practices.",
+      features: ["Full-Stack Development", "React & TypeScript", "Database Integration"],
+      color: "from-teal-500 to-teal-600"
     },
     {
       icon: Settings,
