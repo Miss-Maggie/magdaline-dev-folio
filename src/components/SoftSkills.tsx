@@ -33,6 +33,12 @@ export function SoftSkills() {
       title: "Adaptability",
       description: "Quick learning and adaptation to new technologies and methods",
       color: "from-pink-500 to-pink-600"
+    },
+    {
+      icon: Brain,
+      title: "Documentation",
+      description: "Clear technical writing and comprehensive project documentation",
+      color: "from-teal-500 to-teal-600"
     }
   ]
 

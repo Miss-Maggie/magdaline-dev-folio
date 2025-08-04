@@ -1,5 +1,6 @@
 import { motion } from "framer-motion"
 import { Card } from "@/components/ui/card"
+import profilePicture from "@/assets/profile-picture.jpg"
 
 export function About() {
   return (
@@ -74,13 +75,25 @@ export function About() {
           >
             <Card className="p-8 bg-card-gradient shadow-elegant transform hover:scale-105 transition-all duration-300">
               <motion.div
-                animate={{ 
-                  boxShadow: ["0 0 20px rgba(11, 25, 44, 0.3)", "0 0 40px rgba(11, 25, 44, 0.5)", "0 0 20px rgba(11, 25, 44, 0.3)"]
-                }}
-                transition={{ duration: 2, repeat: Infinity }}
-                className="w-64 h-64 rounded-full bg-gradient-to-br from-primary to-primary-glow mx-auto flex items-center justify-center text-6xl text-white font-bold"
+                initial={{ opacity: 0, scale: 0.8 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                transition={{ duration: 0.6, delay: 0.2 }}
+                viewport={{ once: true }}
+                whileHover={{ scale: 1.05, rotate: 2 }}
+                className="relative"
               >
-                MM
+                <div className="w-64 h-64 mx-auto rounded-full overflow-hidden shadow-elegant border-4 border-primary/20">
+                  <img 
+                    src={profilePicture} 
+                    alt="Magdaline Mutave - Full Stack Developer" 
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <motion.div
+                  animate={{ rotate: 360 }}
+                  transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
+                  className="absolute -inset-2 rounded-full border-2 border-dashed border-primary/30"
+                />
               </motion.div>
               <div className="text-center mt-6">
                 <h3 className="text-xl font-semibold text-foreground mb-2">Magdaline Mutave</h3>

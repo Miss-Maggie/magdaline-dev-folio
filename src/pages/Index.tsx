@@ -1,3 +1,4 @@
+import { Navbar } from "@/components/Navbar"
 import { Hero } from "@/components/Hero"
 import { About } from "@/components/About"
 import { TechnicalSkills } from "@/components/TechnicalSkills"
@@ -12,7 +13,7 @@ import { ThemeToggle } from "@/components/ThemeToggle"
 const Index = () => {
   return (
     <div className="min-h-screen bg-background">
-      <ThemeToggle />
+      <Navbar />
       <Hero />
       <About />
       <TechnicalSkills />
