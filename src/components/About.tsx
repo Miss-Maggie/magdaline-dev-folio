@@ -1,0 +1,95 @@
+import { motion } from "framer-motion"
+import { Card } from "@/components/ui/card"
+
+export function About() {
+  return (
+    <section id="about" className="py-20 bg-background">
+      <div className="container mx-auto px-4">
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          viewport={{ once: true }}
+          className="text-center mb-16"
+        >
+          <h2 className="text-4xl md:text-5xl font-bold mb-6 text-foreground">
+            About Me
+          </h2>
+          <div className="w-24 h-1 bg-primary mx-auto rounded-full"></div>
+        </motion.div>
+
+        <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+          <motion.div
+            initial={{ opacity: 0, x: -30 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.6, delay: 0.2 }}
+            viewport={{ once: true }}
+            className="space-y-6"
+          >
+            <p className="text-lg text-muted-foreground leading-relaxed">
+              I'm a passionate Full Stack Developer with a love for creating digital solutions 
+              that make a difference. My journey in technology began with curiosity and has 
+              evolved into a career focused on building robust, user-friendly applications.
+            </p>
+            
+            <p className="text-lg text-muted-foreground leading-relaxed">
+              With expertise spanning from frontend frameworks like React and TypeScript 
+              to backend technologies including Node.js and databases, I bring a 
+              comprehensive approach to every project. I believe in writing clean, 
+              maintainable code and delivering exceptional user experiences.
+            </p>
+            
+            <p className="text-lg text-muted-foreground leading-relaxed">
+              When I'm not coding, you'll find me exploring new technologies, contributing 
+              to open-source projects, or sharing knowledge with the developer community. 
+              I'm always excited to tackle new challenges and learn from every project.
+            </p>
+
+            <div className="grid grid-cols-2 gap-6 pt-6">
+              <div>
+                <h4 className="font-semibold text-foreground mb-2">Location</h4>
+                <p className="text-muted-foreground">Kenya</p>
+              </div>
+              <div>
+                <h4 className="font-semibold text-foreground mb-2">Experience</h4>
+                <p className="text-muted-foreground">2+ Years</p>
+              </div>
+              <div>
+                <h4 className="font-semibold text-foreground mb-2">Projects</h4>
+                <p className="text-muted-foreground">15+ Completed</p>
+              </div>
+              <div>
+                <h4 className="font-semibold text-foreground mb-2">Specialization</h4>
+                <p className="text-muted-foreground">Full Stack</p>
+              </div>
+            </div>
+          </motion.div>
+
+          <motion.div
+            initial={{ opacity: 0, x: 30 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.6, delay: 0.4 }}
+            viewport={{ once: true }}
+            className="flex justify-center"
+          >
+            <Card className="p-8 bg-card-gradient shadow-elegant transform hover:scale-105 transition-all duration-300">
+              <motion.div
+                animate={{ 
+                  boxShadow: ["0 0 20px rgba(11, 25, 44, 0.3)", "0 0 40px rgba(11, 25, 44, 0.5)", "0 0 20px rgba(11, 25, 44, 0.3)"]
+                }}
+                transition={{ duration: 2, repeat: Infinity }}
+                className="w-64 h-64 rounded-full bg-gradient-to-br from-primary to-primary-glow mx-auto flex items-center justify-center text-6xl text-white font-bold"
+              >
+                MM
+              </motion.div>
+              <div className="text-center mt-6">
+                <h3 className="text-xl font-semibold text-foreground mb-2">Magdaline Mutave</h3>
+                <p className="text-muted-foreground">Full Stack Developer</p>
+              </div>
+            </Card>
+          </motion.div>
+        </div>
+      </div>
+    </section>
+  )
+}
