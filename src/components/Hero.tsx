@@ -71,7 +71,7 @@ export function Hero() {
               onClick={() => scrollToSection('projects')}
               variant="outline"
               size="lg"
-              className="border-white text-white hover:bg-white hover:text-primary font-semibold px-8 py-3 rounded-full transition-all duration-300 transform hover:scale-105"
+              className="border-white bg-transparent text-white hover:bg-white hover:text-primary font-semibold px-8 py-3 rounded-full transition-all duration-300 transform hover:scale-105"
             >
               My Works
             </Button>
