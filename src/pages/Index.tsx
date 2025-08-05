@@ -5,7 +5,7 @@ import { TechnicalSkills } from "@/components/TechnicalSkills"
 import { SoftSkills } from "@/components/SoftSkills"
 import { Services } from "@/components/Services"
 import { Projects } from "@/components/Projects"
-import { Blog } from "@/components/Blog"
+
 import { Contact } from "@/components/Contact"
 import { Footer } from "@/components/Footer"
 import { ThemeToggle } from "@/components/ThemeToggle"
@@ -20,7 +20,7 @@ const Index = () => {
       <SoftSkills />
       <Services />
       <Projects />
-      <Blog />
+      
       <Contact />
       <Footer />
     </div>

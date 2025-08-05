@@ -21,86 +21,6 @@ export function Blog() {
       readTime: "8 min read",
       category: "Supabase",
       image: "https://images.unsplash.com/photo-1618477461853-cf6ed80faba5?w=400&h=250&fit=crop"
-    },
-    {
-      title: "Mastering Git Workflows for Teams",
-      snippet: "Effective Git strategies for collaborative development that will streamline your team's workflow. Learn about branching strategies, commit conventions, and conflict resolution. This comprehensive guide covers Git Flow, GitHub Flow, and GitLab Flow methodologies, helping you choose the right approach for your team size and project requirements. We'll explore semantic commit messages, automated testing integration, code review best practices, and how to handle complex merge scenarios while maintaining a clean project history.",
-      date: "2024-01-12",
-      readTime: "7 min read",
-      category: "DevOps",
-      image: "https://images.unsplash.com/photo-1556075798-4825dfaaf498?w=400&h=250&fit=crop"
-    },
-    {
-      title: "Building Accessible Web Components",
-      snippet: "Creating inclusive web experiences through proper accessibility implementation. A comprehensive guide to WCAG guidelines, ARIA attributes, and testing strategies. Learn how to build components that work for everyone, including users with disabilities. We'll cover semantic HTML, keyboard navigation, screen reader compatibility, color contrast considerations, and automated accessibility testing tools. Plus practical examples of accessible forms, modals, and navigation components.",
-      date: "2024-01-05",
-      readTime: "6 min read",
-      category: "Accessibility",
-      image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&h=250&fit=crop"
-    },
-    {
-      title: "Writing Better Technical Documentation",
-      snippet: "Best practices for creating documentation that developers actually want to read. Tips on structure, clarity, and keeping documentation up-to-date. This guide covers documentation-as-code principles, automated documentation generation, interactive examples, and maintaining consistency across large projects. Learn how to write API documentation that developers love, create effective tutorials, and implement feedback loops to continuously improve your documentation quality.",
-      date: "2024-01-02",
-      readTime: "6 min read",
-      category: "Documentation",
-      image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=250&fit=crop"
-    },
-    {
-      title: "Top Tailwind Tips You Should Know",
-      snippet: "Essential Tailwind CSS tips and tricks that will speed up your development workflow. From custom configurations to advanced responsive design patterns, discover powerful techniques for building beautiful UIs efficiently. We'll explore custom utility classes, component extraction strategies, performance optimization, and integration with design systems. Learn about arbitrary value support, advanced responsive design patterns, and how to maintain consistency across large applications while keeping your CSS bundle size optimized.",
-      date: "2023-12-28",
-      readTime: "4 min read",
-      category: "CSS",
-      image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=250&fit=crop"
-    },
-    {
-      title: "Building Responsive Web Applications",
-      snippet: "Modern approaches to responsive design that ensure your applications work perfectly across all devices. Mobile-first strategies and performance optimization techniques for creating seamless user experiences. This comprehensive guide covers CSS Grid and Flexbox layouts, responsive images, progressive enhancement, and performance budgets. Learn about modern CSS features like container queries, intrinsic web design principles, and how to test your responsive designs across multiple devices and viewports effectively.",
-      date: "2023-12-22",
-      readTime: "7 min read",
-      category: "Web Development",
-      image: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=400&h=250&fit=crop"
-    },
-    {
-      title: "Optimizing React Performance",
-      snippet: "Deep dive into React performance optimization techniques including memo, useMemo, useCallback, and React.lazy. Learn how to identify performance bottlenecks, implement code splitting, and create faster applications. This guide covers profiling tools, bundle analysis, and advanced patterns like virtualization for large lists.",
-      date: "2023-12-18",
-      readTime: "9 min read",
-      category: "React",
-      image: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=400&h=250&fit=crop"
-    },
-    {
-      title: "Modern CSS Grid Techniques",
-      snippet: "Mastering CSS Grid for complex layouts and responsive design patterns. From basic grid concepts to advanced techniques like subgrid and container queries. Learn how to create magazine-style layouts, responsive image galleries, and complex dashboard interfaces using modern CSS Grid features.",
-      date: "2023-12-15",
-      readTime: "6 min read",
-      category: "CSS",
-      image: "https://images.unsplash.com/photo-1517180102446-f3ece451e9d8?w=400&h=250&fit=crop"
-    },
-    {
-      title: "JavaScript ES2024 Features",
-      snippet: "Exploring the latest JavaScript features and how they improve developer experience. From temporal API to pattern matching, discover what's new in modern JavaScript. This comprehensive overview covers practical examples and migration strategies for adopting these features in your projects.",
-      date: "2023-12-12",
-      readTime: "8 min read",
-      category: "JavaScript",
-      image: "https://images.unsplash.com/photo-1579468118864-1b9ea3c0db4a?w=400&h=250&fit=crop"
-    },
-    {
-      title: "API Design Best Practices",
-      snippet: "Creating robust and scalable APIs that developers love to use. Covering REST principles, GraphQL implementation, authentication strategies, and comprehensive documentation. Learn about versioning, error handling, rate limiting, and testing strategies for production-ready APIs.",
-      date: "2023-12-08",
-      readTime: "10 min read",
-      category: "Backend",
-      image: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=400&h=250&fit=crop"
-    },
-    {
-      title: "Database Design Fundamentals",
-      snippet: "Understanding relational database design principles and normalization techniques. From entity-relationship modeling to query optimization, learn how to design efficient database schemas. Covers indexing strategies, performance tuning, and migration best practices for scalable applications.",
-      date: "2023-12-05",
-      readTime: "11 min read",
-      category: "Database",
-      image: "https://images.unsplash.com/photo-1544383835-bda2bc66a55d?w=400&h=250&fit=crop"
     }
   ]
 
@@ -179,7 +99,7 @@ export function Blog() {
 
             {/* Recent Posts */}
             <div className="space-y-6">
-              {blogPosts.slice(1, 5).map((post, index) => (
+              {blogPosts.slice(1, 2).map((post, index) => (
                 <motion.div
                   key={post.title}
                   initial={{ opacity: 0, x: 30 }}

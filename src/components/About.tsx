@@ -21,11 +21,47 @@ export function About() {
 
         <div className="max-w-6xl mx-auto grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
           <motion.div
+            initial={{ opacity: 0, x: 30 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.6, delay: 0.4 }}
+            viewport={{ once: true }}
+            className="flex justify-center lg:order-2"
+          >
+            <Card className="p-8 bg-card-gradient shadow-elegant transform hover:scale-105 transition-all duration-300">
+              <motion.div
+                initial={{ opacity: 0, scale: 0.8 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                transition={{ duration: 0.6, delay: 0.2 }}
+                viewport={{ once: true }}
+                whileHover={{ scale: 1.05, rotate: 2 }}
+                className="relative"
+              >
+                <div className="w-56 sm:w-64 h-56 sm:h-64 mx-auto rounded-full overflow-hidden shadow-elegant border-4 border-primary/20">
+                  <img 
+                    src={profilePicture} 
+                    alt="Magdaline Mutave - Full Stack Developer" 
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <motion.div
+                  animate={{ rotate: 360 }}
+                  transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
+                  className="absolute -inset-2 rounded-full border-2 border-dashed border-primary/30"
+                />
+              </motion.div>
+              <div className="text-center mt-6">
+                <h3 className="text-xl font-semibold text-foreground mb-2">Magdaline Mutave</h3>
+                <p className="text-muted-foreground">Full Stack Developer</p>
+              </div>
+            </Card>
+          </motion.div>
+
+          <motion.div
             initial={{ opacity: 0, x: -30 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
             viewport={{ once: true }}
-            className="space-y-6"
+            className="space-y-6 lg:order-1"
           >
             <p className="text-lg text-muted-foreground leading-relaxed">
               I'm a passionate Full Stack Developer with a love for creating digital solutions 
@@ -66,41 +102,6 @@ export function About() {
             </div>
           </motion.div>
 
-          <motion.div
-            initial={{ opacity: 0, x: 30 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.6, delay: 0.4 }}
-            viewport={{ once: true }}
-            className="flex justify-center"
-          >
-            <Card className="p-8 bg-card-gradient shadow-elegant transform hover:scale-105 transition-all duration-300">
-              <motion.div
-                initial={{ opacity: 0, scale: 0.8 }}
-                whileInView={{ opacity: 1, scale: 1 }}
-                transition={{ duration: 0.6, delay: 0.2 }}
-                viewport={{ once: true }}
-                whileHover={{ scale: 1.05, rotate: 2 }}
-                className="relative"
-              >
-                <div className="w-56 sm:w-64 h-56 sm:h-64 mx-auto rounded-full overflow-hidden shadow-elegant border-4 border-primary/20">
-                  <img 
-                    src={profilePicture} 
-                    alt="Magdaline Mutave - Full Stack Developer" 
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-                <motion.div
-                  animate={{ rotate: 360 }}
-                  transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
-                  className="absolute -inset-2 rounded-full border-2 border-dashed border-primary/30"
-                />
-              </motion.div>
-              <div className="text-center mt-6">
-                <h3 className="text-xl font-semibold text-foreground mb-2">Magdaline Mutave</h3>
-                <p className="text-muted-foreground">Full Stack Developer</p>
-              </div>
-            </Card>
-          </motion.div>
         </div>
       </div>
     </section>
