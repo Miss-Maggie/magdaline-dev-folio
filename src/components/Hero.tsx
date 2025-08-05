@@ -30,7 +30,7 @@ export function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-white to-primary-glow bg-clip-text text-transparent"
+            className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-6 bg-gradient-to-r from-white to-primary-glow bg-clip-text text-transparent"
           >
             Magdaline Mutave
           </motion.h1>
@@ -39,7 +39,7 @@ export function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
-            className="text-xl md:text-2xl font-medium mb-4 text-blue-100"
+            className="text-lg sm:text-xl md:text-2xl font-medium mb-4 text-blue-100"
           >
             Full Stack Developer
           </motion.p>
@@ -48,7 +48,7 @@ export function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.6 }}
-            className="text-lg md:text-xl mb-8 text-blue-200 max-w-2xl mx-auto"
+            className="text-base sm:text-lg md:text-xl mb-8 text-blue-200 max-w-2xl mx-auto px-4"
           >
             Crafting elegant digital solutions with modern technologies. 
             Passionate about creating seamless user experiences and robust applications.
@@ -58,12 +58,12 @@ export function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.8 }}
-            className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12"
+            className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-center mb-12 px-4"
           >
             <Button
               onClick={() => scrollToSection('contact')}
               size="lg"
-              className="bg-white text-primary hover:bg-blue-50 font-semibold px-8 py-3 rounded-full transition-all duration-300 transform hover:scale-105 shadow-xl"
+              className="bg-white text-primary hover:bg-blue-50 font-semibold px-6 sm:px-8 py-3 rounded-full transition-all duration-300 transform hover:scale-105 shadow-xl w-full sm:w-auto"
             >
               Hire Me
             </Button>
@@ -71,7 +71,7 @@ export function Hero() {
               onClick={() => scrollToSection('projects')}
               variant="outline"
               size="lg"
-              className="border-white bg-transparent text-white hover:bg-white hover:text-primary font-semibold px-8 py-3 rounded-full transition-all duration-300 transform hover:scale-105"
+              className="border-white bg-transparent text-white hover:bg-white hover:text-primary font-semibold px-6 sm:px-8 py-3 rounded-full transition-all duration-300 transform hover:scale-105 w-full sm:w-auto"
             >
               My Works
             </Button>
@@ -81,7 +81,7 @@ export function Hero() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.8, delay: 1 }}
-            className="flex justify-center space-x-6 mb-12"
+            className="flex justify-center space-x-6 mb-12 px-4"
           >
             <a
               href="https://github.com/magdalinemutave"

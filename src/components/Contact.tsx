@@ -134,7 +134,7 @@ export function Contact() {
               </h3>
               
               <form onSubmit={handleSubmit} className="space-y-6">
-                <div className="grid md:grid-cols-2 gap-4">
+                <div className="grid sm:grid-cols-2 gap-4">
                   <div className="space-y-2">
                     <Label htmlFor="name" className="text-foreground">Name</Label>
                     <Input

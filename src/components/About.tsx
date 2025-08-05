@@ -19,7 +19,7 @@ export function About() {
           <div className="w-24 h-1 bg-primary mx-auto rounded-full"></div>
         </motion.div>
 
-        <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+        <div className="max-w-6xl mx-auto grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
           <motion.div
             initial={{ opacity: 0, x: -30 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -46,7 +46,7 @@ export function About() {
               I'm always excited to tackle new challenges and learn from every project.
             </p>
 
-            <div className="grid grid-cols-2 gap-6 pt-6">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 lg:gap-6 pt-6">
               <div>
                 <h4 className="font-semibold text-foreground mb-2">Location</h4>
                 <p className="text-muted-foreground">Kenya</p>
@@ -82,7 +82,7 @@ export function About() {
                 whileHover={{ scale: 1.05, rotate: 2 }}
                 className="relative"
               >
-                <div className="w-64 h-64 mx-auto rounded-full overflow-hidden shadow-elegant border-4 border-primary/20">
+                <div className="w-56 sm:w-64 h-56 sm:h-64 mx-auto rounded-full overflow-hidden shadow-elegant border-4 border-primary/20">
                   <img 
                     src={profilePicture} 
                     alt="Magdaline Mutave - Full Stack Developer" 
