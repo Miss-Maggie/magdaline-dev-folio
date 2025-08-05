@@ -44,12 +44,13 @@ export function Navbar() {
           </motion.div>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center space-x-8">
+          <div className="hidden md:flex items-center space-x-4">
             {navItems.map((item) => (
               <Button
                 key={item.label}
                 variant="ghost"
-                className="text-foreground hover:text-primary hover:bg-accent/50 transition-colors duration-300"
+                size="sm"
+                className="text-foreground hover:text-primary hover:bg-accent/50 transition-colors duration-300 px-3"
                 onClick={() => scrollToSection(item.href)}
               >
                 {item.label}

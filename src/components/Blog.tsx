@@ -8,7 +8,7 @@ export function Blog() {
   const blogPosts = [
     {
       title: "React with TypeScript: Why I Switched",
-      snippet: "Exploring the benefits of using TypeScript with React and how it transformed my development workflow. From better error catching to improved code maintainability...",
+      snippet: "Exploring the benefits of using TypeScript with React and how it transformed my development workflow. From better error catching to improved code maintainability, TypeScript has become an essential part of my React development process. In this comprehensive guide, I'll walk you through the key benefits including compile-time error detection, enhanced IDE support, better refactoring capabilities, and improved team collaboration. We'll also cover practical migration strategies and common patterns that will help you make the transition smoothly.",
       date: "2024-01-15",
       readTime: "5 min read",
       category: "React",
@@ -16,15 +16,31 @@ export function Blog() {
     },
     {
       title: "How I Built My First Supabase App",
-      snippet: "A step-by-step journey of building a full-stack application with Supabase. Learn about authentication, real-time features, and database management...",
+      snippet: "A step-by-step journey of building a full-stack application with Supabase. Learn about authentication, real-time features, and database management. This detailed tutorial covers everything from initial setup to deployment, including user authentication with social providers, real-time subscriptions for live data updates, file storage implementation, and row-level security policies. I'll share the challenges I faced and how I overcame them, plus performance optimization tips and best practices for production deployment.",
       date: "2024-01-08",
       readTime: "8 min read",
       category: "Supabase",
       image: "https://images.unsplash.com/photo-1618477461853-cf6ed80faba5?w=400&h=250&fit=crop"
     },
     {
+      title: "Mastering Git Workflows for Teams",
+      snippet: "Effective Git strategies for collaborative development that will streamline your team's workflow. Learn about branching strategies, commit conventions, and conflict resolution. This comprehensive guide covers Git Flow, GitHub Flow, and GitLab Flow methodologies, helping you choose the right approach for your team size and project requirements. We'll explore semantic commit messages, automated testing integration, code review best practices, and how to handle complex merge scenarios while maintaining a clean project history.",
+      date: "2024-01-12",
+      readTime: "7 min read",
+      category: "DevOps",
+      image: "https://images.unsplash.com/photo-1556075798-4825dfaaf498?w=400&h=250&fit=crop"
+    },
+    {
+      title: "Building Accessible Web Components",
+      snippet: "Creating inclusive web experiences through proper accessibility implementation. A comprehensive guide to WCAG guidelines, ARIA attributes, and testing strategies. Learn how to build components that work for everyone, including users with disabilities. We'll cover semantic HTML, keyboard navigation, screen reader compatibility, color contrast considerations, and automated accessibility testing tools. Plus practical examples of accessible forms, modals, and navigation components.",
+      date: "2024-01-05",
+      readTime: "6 min read",
+      category: "Accessibility",
+      image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&h=250&fit=crop"
+    },
+    {
       title: "Writing Better Technical Documentation",
-      snippet: "Best practices for creating documentation that developers actually want to read. Tips on structure, clarity, and keeping documentation up-to-date...",
+      snippet: "Best practices for creating documentation that developers actually want to read. Tips on structure, clarity, and keeping documentation up-to-date. This guide covers documentation-as-code principles, automated documentation generation, interactive examples, and maintaining consistency across large projects. Learn how to write API documentation that developers love, create effective tutorials, and implement feedback loops to continuously improve your documentation quality.",
       date: "2024-01-02",
       readTime: "6 min read",
       category: "Documentation",
@@ -32,7 +48,7 @@ export function Blog() {
     },
     {
       title: "Top Tailwind Tips You Should Know",
-      snippet: "Essential Tailwind CSS tips and tricks that will speed up your development workflow. From custom configurations to advanced responsive design patterns...",
+      snippet: "Essential Tailwind CSS tips and tricks that will speed up your development workflow. From custom configurations to advanced responsive design patterns, discover powerful techniques for building beautiful UIs efficiently. We'll explore custom utility classes, component extraction strategies, performance optimization, and integration with design systems. Learn about arbitrary value support, advanced responsive design patterns, and how to maintain consistency across large applications while keeping your CSS bundle size optimized.",
       date: "2023-12-28",
       readTime: "4 min read",
       category: "CSS",
@@ -40,7 +56,7 @@ export function Blog() {
     },
     {
       title: "Building Responsive Web Applications",
-      snippet: "Modern approaches to responsive design that ensure your applications work perfectly across all devices. Mobile-first strategies and performance optimization...",
+      snippet: "Modern approaches to responsive design that ensure your applications work perfectly across all devices. Mobile-first strategies and performance optimization techniques for creating seamless user experiences. This comprehensive guide covers CSS Grid and Flexbox layouts, responsive images, progressive enhancement, and performance budgets. Learn about modern CSS features like container queries, intrinsic web design principles, and how to test your responsive designs across multiple devices and viewports effectively.",
       date: "2023-12-22",
       readTime: "7 min read",
       category: "Web Development",

@@ -93,30 +93,6 @@ export function Projects() {
                     alt={project.title}
                     className="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-300"
                   />
-                  <div className="absolute inset-0 bg-primary/80 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center space-x-4">
-                    <Button
-                      size="sm"
-                      variant="secondary"
-                      asChild
-                      className="bg-white/90 hover:bg-white"
-                    >
-                      <a href={project.github} target="_blank" rel="noopener noreferrer">
-                        <Github className="w-4 h-4 mr-2" />
-                        Code
-                      </a>
-                    </Button>
-                    <Button
-                      size="sm"
-                      variant="secondary"
-                      asChild
-                      className="bg-white/90 hover:bg-white"
-                    >
-                      <a href={project.demo} target="_blank" rel="noopener noreferrer">
-                        <ExternalLink className="w-4 h-4 mr-2" />
-                        Demo
-                      </a>
-                    </Button>
-                  </div>
                 </div>
 
                 <div className="p-6">
@@ -136,29 +112,6 @@ export function Projects() {
                     ))}
                   </div>
 
-                  <div className="flex space-x-3">
-                    <Button
-                      size="sm"
-                      variant="outline"
-                      asChild
-                      className="flex-1"
-                    >
-                      <a href={project.github} target="_blank" rel="noopener noreferrer">
-                        <Github className="w-4 h-4 mr-2" />
-                        GitHub
-                      </a>
-                    </Button>
-                    <Button
-                      size="sm"
-                      asChild
-                      className="flex-1"
-                    >
-                      <a href={project.demo} target="_blank" rel="noopener noreferrer">
-                        <ExternalLink className="w-4 h-4 mr-2" />
-                        Demo
-                      </a>
-                    </Button>
-                  </div>
                 </div>
               </Card>
             </motion.div>

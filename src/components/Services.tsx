@@ -113,13 +113,6 @@ export function Services() {
                   ))}
                 </ul>
 
-                <Button
-                  variant="ghost"
-                  className="w-full group/btn hover:bg-primary hover:text-primary-foreground transition-all duration-300"
-                >
-                  Learn More
-                  <ArrowRight className="w-4 h-4 ml-2 group-hover/btn:translate-x-1 transition-transform duration-300" />
-                </Button>
               </Card>
             </motion.div>
           ))}
