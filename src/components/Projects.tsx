@@ -4,25 +4,30 @@ import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
 import { Github, ExternalLink } from "lucide-react"
 
+import EcomerceImg from "@/assets/Ecomerce.png";
+import BookingAppImg from "@/assets/Booking App.png";
+import PortfolioImg from "@/assets/Portfolio.png";
+
 export function Projects() {
+
   const projects = [
     {
       title: "E-Commerce Platform",
       description: "Full-stack e-commerce solution with React, Node.js, and MongoDB. Features include user authentication, payment processing, and admin dashboard.",
       tags: ["React", "Node.js", "MongoDB", "Stripe"],
-      image: 'src/assets/Ecomerce.png',
+      image: EcomerceImg,
     },
     {
       title: "Salon Booking App",
       description: "A salon booking  application built with React, TypeScript, and Supabase. Real-time updates and team collaboration features.",
       tags: ["React", "TypeScript", "Supabase", "Tailwind"],
-      image: 'src/assets/Booking App.png',
+      image: BookingAppImg,
     },
     {
       title: "Portfolio Website",
       description: "Personal portfolio website showcasing projects and skills. Built with React, TypeScript, and Framer Motion.",
       tags: ["React", "TypeScript", "Framer Motion", "Tailwind"],
-      image: 'src/assets/Portfolio.png',
+      image: PortfolioImg,
     },
   ]
 

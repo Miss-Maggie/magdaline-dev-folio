@@ -132,7 +132,6 @@ export function Footer() {
         >
           <div className="flex items-center space-x-2 text-primary-foreground/80">
             <span>Made</span>
-            {/* <Heart className="w-4 h-4 text-red-400" fill="currentColor" /> */}
             <span>by Magdaline</span>
           </div>
 
