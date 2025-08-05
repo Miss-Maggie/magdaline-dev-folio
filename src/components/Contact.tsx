@@ -27,7 +27,7 @@ export function Contact() {
     const formData = new FormData(e.currentTarget)
     
     try {
-      const response = await fetch('https://formspree.io/f/magdalinemutave001@gmail.com', {
+      const response = await fetch('https://formspree.io/f/xkgzvnok', {
         method: 'POST',
         body: formData,
         headers: {
@@ -83,13 +83,13 @@ export function Contact() {
     {
       icon: Github,
       label: "GitHub",
-      href: "https://github.com/magdalinemutave",
+      href: "https://github.com/Miss-Maggie",
       color: "hover:text-gray-600"
     },
     {
       icon: Linkedin,
       label: "LinkedIn",
-      href: "https://linkedin.com/in/magdaline-mutave",
+      href: "https://www.linkedin.com/in/magdaline-muthui-82b79a251",
       color: "hover:text-blue-600"
     },
     {

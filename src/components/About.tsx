@@ -39,7 +39,7 @@ export function About() {
                 <div className="w-56 sm:w-64 h-56 sm:h-64 mx-auto rounded-full overflow-hidden shadow-elegant border-4 border-primary/20">
                   <img 
                     src={profilePicture} 
-                    alt="Magdaline Mutave - Full Stack Developer" 
+                    alt="Magdaline Muthui - Full Stack Developer" 
                     className="w-full h-full object-cover"
                   />
                 </div>
@@ -50,7 +50,7 @@ export function About() {
                 />
               </motion.div>
               <div className="text-center mt-6">
-                <h3 className="text-xl font-semibold text-foreground mb-2">Magdaline Mutave</h3>
+                <h3 className="text-xl font-semibold text-foreground mb-2">Magdaline Muthui</h3>
                 <p className="text-muted-foreground">Full Stack Developer</p>
               </div>
             </Card>

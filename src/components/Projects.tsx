@@ -10,50 +10,20 @@ export function Projects() {
       title: "E-Commerce Platform",
       description: "Full-stack e-commerce solution with React, Node.js, and MongoDB. Features include user authentication, payment processing, and admin dashboard.",
       tags: ["React", "Node.js", "MongoDB", "Stripe"],
-      image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=500&h=300&fit=crop",
-      github: "https://github.com/magdalinemutave/ecommerce-platform",
-      demo: "https://ecommerce-demo.netlify.app"
+      image: 'src/assets/Ecomerce.png',
     },
     {
-      title: "Task Management App",
-      description: "Collaborative task management application built with React, TypeScript, and Supabase. Real-time updates and team collaboration features.",
+      title: "Salon Booking App",
+      description: "A salon booking  application built with React, TypeScript, and Supabase. Real-time updates and team collaboration features.",
       tags: ["React", "TypeScript", "Supabase", "Tailwind"],
-      image: "https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=500&h=300&fit=crop",
-      github: "https://github.com/magdalinemutave/task-manager",
-      demo: "https://task-manager-demo.netlify.app"
-    },
-    {
-      title: "Weather Dashboard",
-      description: "Real-time weather application with beautiful visualizations. Built with React and integrated with OpenWeather API.",
-      tags: ["React", "API", "Charts", "CSS"],
-      image: "https://images.unsplash.com/photo-1504608524841-42fe6f032b4b?w=500&h=300&fit=crop",
-      github: "https://github.com/magdalinemutave/weather-dashboard",
-      demo: "https://weather-dashboard-demo.netlify.app"
-    },
-    {
-      title: "Blog Platform",
-      description: "Modern blogging platform with markdown support, comment system, and admin panel. Built with React and Express.",
-      tags: ["React", "Express", "PostgreSQL", "Markdown"],
-      image: "https://images.unsplash.com/photo-1486312338219-ce68e2c6ac3b?w=500&h=300&fit=crop",
-      github: "https://github.com/magdalinemutave/blog-platform",
-      demo: "https://blog-platform-demo.netlify.app"
+      image: 'src/assets/Booking App.png',
     },
     {
       title: "Portfolio Website",
       description: "Personal portfolio website showcasing projects and skills. Built with React, TypeScript, and Framer Motion.",
       tags: ["React", "TypeScript", "Framer Motion", "Tailwind"],
-      image: "https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=500&h=300&fit=crop",
-      github: "https://github.com/magdalinemutave/portfolio",
-      demo: "https://magdalinemutave.netlify.app"
+      image: 'src/assets/Portfolio.png',
     },
-    {
-      title: "Chat Application",
-      description: "Real-time chat application with rooms, file sharing, and emoji support. Built with React and Socket.io.",
-      tags: ["React", "Socket.io", "Node.js", "MongoDB"],
-      image: "https://images.unsplash.com/photo-1577563908411-5077b6dc7624?w=500&h=300&fit=crop",
-      github: "https://github.com/magdalinemutave/chat-app",
-      demo: "https://chat-app-demo.netlify.app"
-    }
   ]
 
   return (

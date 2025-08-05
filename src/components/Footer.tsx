@@ -15,12 +15,12 @@ export function Footer() {
     {
       icon: Github,
       label: "GitHub",
-      href: "https://github.com/magdalinemutave"
+      href: "https://github.com/Miss-Maggie"
     },
     {
       icon: Linkedin,
       label: "LinkedIn",
-      href: "https://linkedin.com/in/magdaline-mutave"
+      href: "https://www.linkedin.com/in/magdaline-muthui-82b79a251"
     },
     {
       icon: MessageCircle,
@@ -48,7 +48,7 @@ export function Footer() {
             viewport={{ once: true }}
             className="space-y-4"
           >
-            <h3 className="text-2xl font-bold">Magdaline Mutave</h3>
+            <h3 className="text-2xl font-bold">Magdaline Muthui</h3>
             <p className="text-primary-foreground/80 leading-relaxed">
               Full Stack Developer passionate about creating innovative digital solutions 
               and delivering exceptional user experiences.
@@ -131,8 +131,8 @@ export function Footer() {
           className="border-t border-primary-foreground/20 pt-8 flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0"
         >
           <div className="flex items-center space-x-2 text-primary-foreground/80">
-            <span>Made with</span>
-            <Heart className="w-4 h-4 text-red-400" fill="currentColor" />
+            <span>Made</span>
+            {/* <Heart className="w-4 h-4 text-red-400" fill="currentColor" /> */}
             <span>by Magdaline</span>
           </div>
 

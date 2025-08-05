@@ -12,7 +12,7 @@ export function TechnicalSkills() {
         { name: "JavaScript", level: 88 },
         { name: "React", level: 85 },
         { name: "TypeScript", level: 80 },
-        { name: "Website Development", level: 92 }
+        { name: "Tailwind CSS", level: 90 }
       ],
       color: "from-blue-500 to-blue-600"
     },
@@ -21,7 +21,8 @@ export function TechnicalSkills() {
       skills: [
         { name: "Node.js", level: 85 },
         { name: "Express", level: 80 },
-        { name: "NestJS", level: 75 }
+        { name: "NestJS", level: 75 },
+        { name: "REST APIs", level: 90 }
       ],
       color: "from-green-500 to-green-600"
     },
@@ -40,8 +41,7 @@ export function TechnicalSkills() {
         { name: "VS Code", level: 95 },
         { name: "Postman", level: 85 },
         { name: "Linux CLI", level: 70 },
-        { name: "Git & GitHub", level: 88 },
-        { name: "IT Support", level: 90 }
+        { name: "Git & GitHub", level: 88 }
       ],
       color: "from-orange-500 to-orange-600"
     }

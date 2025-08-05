@@ -32,7 +32,7 @@ export function Hero() {
             transition={{ duration: 0.8, delay: 0.2 }}
             className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-6 bg-gradient-to-r from-white to-primary-glow bg-clip-text text-transparent"
           >
-            Magdaline Mutave
+            Magdaline Muthui
           </motion.h1>
           
           <motion.p
@@ -75,6 +75,11 @@ export function Hero() {
             >
               My Works
             </Button>
+            <Button asChild size="lg" className="bg-primary text-white hover:bg-primary/90 font-semibold px-6 sm:px-8 py-3 rounded-full transition-all duration-300 transform hover:scale-105 w-full sm:w-auto">
+              <a href="/MAGDALINE MUTHUI.pdf" download>
+                Download CV
+              </a>
+            </Button>
           </motion.div>
 
           <motion.div
@@ -84,7 +89,7 @@ export function Hero() {
             className="flex justify-center space-x-6 mb-12 px-4"
           >
             <a
-              href="https://github.com/magdalinemutave"
+              href="https://github.com/Miss-Maggie"
               target="_blank"
               rel="noopener noreferrer"
               className="text-white hover:text-primary-glow transition-colors duration-300 transform hover:scale-110"
@@ -92,7 +97,7 @@ export function Hero() {
               <Github size={24} />
             </a>
             <a
-              href="https://linkedin.com/in/magdaline-mutave"
+              href="https://www.linkedin.com/in/magdaline-muthui-82b79a251"
               target="_blank"
               rel="noopener noreferrer"
               className="text-white hover:text-primary-glow transition-colors duration-300 transform hover:scale-110"
