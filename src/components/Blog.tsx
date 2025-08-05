@@ -61,6 +61,46 @@ export function Blog() {
       readTime: "7 min read",
       category: "Web Development",
       image: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=400&h=250&fit=crop"
+    },
+    {
+      title: "Optimizing React Performance",
+      snippet: "Deep dive into React performance optimization techniques including memo, useMemo, useCallback, and React.lazy. Learn how to identify performance bottlenecks, implement code splitting, and create faster applications. This guide covers profiling tools, bundle analysis, and advanced patterns like virtualization for large lists.",
+      date: "2023-12-18",
+      readTime: "9 min read",
+      category: "React",
+      image: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=400&h=250&fit=crop"
+    },
+    {
+      title: "Modern CSS Grid Techniques",
+      snippet: "Mastering CSS Grid for complex layouts and responsive design patterns. From basic grid concepts to advanced techniques like subgrid and container queries. Learn how to create magazine-style layouts, responsive image galleries, and complex dashboard interfaces using modern CSS Grid features.",
+      date: "2023-12-15",
+      readTime: "6 min read",
+      category: "CSS",
+      image: "https://images.unsplash.com/photo-1517180102446-f3ece451e9d8?w=400&h=250&fit=crop"
+    },
+    {
+      title: "JavaScript ES2024 Features",
+      snippet: "Exploring the latest JavaScript features and how they improve developer experience. From temporal API to pattern matching, discover what's new in modern JavaScript. This comprehensive overview covers practical examples and migration strategies for adopting these features in your projects.",
+      date: "2023-12-12",
+      readTime: "8 min read",
+      category: "JavaScript",
+      image: "https://images.unsplash.com/photo-1579468118864-1b9ea3c0db4a?w=400&h=250&fit=crop"
+    },
+    {
+      title: "API Design Best Practices",
+      snippet: "Creating robust and scalable APIs that developers love to use. Covering REST principles, GraphQL implementation, authentication strategies, and comprehensive documentation. Learn about versioning, error handling, rate limiting, and testing strategies for production-ready APIs.",
+      date: "2023-12-08",
+      readTime: "10 min read",
+      category: "Backend",
+      image: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=400&h=250&fit=crop"
+    },
+    {
+      title: "Database Design Fundamentals",
+      snippet: "Understanding relational database design principles and normalization techniques. From entity-relationship modeling to query optimization, learn how to design efficient database schemas. Covers indexing strategies, performance tuning, and migration best practices for scalable applications.",
+      date: "2023-12-05",
+      readTime: "11 min read",
+      category: "Database",
+      image: "https://images.unsplash.com/photo-1544383835-bda2bc66a55d?w=400&h=250&fit=crop"
     }
   ]
 
@@ -101,7 +141,7 @@ export function Blog() {
               viewport={{ once: true }}
               className="lg:col-span-2"
             >
-              <Card className="overflow-hidden bg-card shadow-card-custom hover:shadow-elegant transition-all duration-300 border-0 group">
+              <Card className="overflow-hidden bg-card shadow-card-custom hover:shadow-elegant transition-all duration-300 border-0 group hover:scale-105 hover:-translate-y-2 hover:rotate-1">
                 <div className="relative overflow-hidden">
                   <img
                     src={blogPosts[0].image}
@@ -133,10 +173,6 @@ export function Blog() {
                     {blogPosts[0].snippet}
                   </p>
                   
-                  <Button className="group/btn">
-                    Read More
-                    <ArrowRight className="w-4 h-4 ml-2 group-hover/btn:translate-x-1 transition-transform duration-300" />
-                  </Button>
                 </div>
               </Card>
             </motion.div>
@@ -151,7 +187,7 @@ export function Blog() {
                   transition={{ duration: 0.6, delay: index * 0.1 }}
                   viewport={{ once: true }}
                 >
-                  <Card className="overflow-hidden bg-card shadow-card-custom hover:shadow-elegant transition-all duration-300 border-0 group cursor-pointer">
+                  <Card className="overflow-hidden bg-card shadow-card-custom hover:shadow-elegant transition-all duration-300 border-0 group cursor-pointer hover:scale-105 hover:-translate-y-1 hover:rotate-1">
                     <div className="flex">
                       <img
                         src={post.image}
