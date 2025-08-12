@@ -13,7 +13,7 @@ export function Navbar() {
     { label: "Skills", href: "#technical-skills" },
     { label: "Services", href: "#services" },
     { label: "Projects", href: "#projects" },
-    { label: "Blog", href: "#blog" },
+    // { label: "Blog", href: "#blog" },
     { label: "Contact", href: "#contact" }
   ]
 
@@ -56,12 +56,12 @@ export function Navbar() {
                 {item.label}
               </Button>
             ))}
-            <ThemeToggle />
+            {/* ThemeToggle removed to force dark theme */}
           </div>
 
           {/* Mobile Menu Button */}
           <div className="md:hidden flex items-center space-x-2">
-            <ThemeToggle />
+            {/* ThemeToggle removed to force dark theme */}
             <Button
               variant="ghost"
               size="icon"
